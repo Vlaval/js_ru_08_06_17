@@ -15,7 +15,7 @@ export default (filters = defaultFilters, action) => {
     case SELECT:
       return {...filters, selected: payload.selectedArr}
     case DATE_RANGE:
-      return {...filters, dateRange: payload.dateRange}
+      return {...filters, dateRange: payload.range}
   }
 
   return filters
